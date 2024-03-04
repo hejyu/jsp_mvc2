@@ -18,21 +18,21 @@
 	<form method="POST">
 		<ul id="m-ul" class="mt-4">
 			<li>
-				<label for="p_code"><span class="">상품코드(필수)</span></label>
-				<input type="text" class="" name="p_code" id="p_code" placeholder="상품코드를 입력해 주세요" required>
+				<label for="p_code"><span class="span_text">상품코드(필수)</span></label>
+				<input type="text" class="input_item" name="p_code" id="p_code" placeholder="상품코드를 입력해 주세요" required>
 				<%--<button type="button" class="btn btn_gray" name="btn_check_id" id="btn_check_id">중복확인</button>--%>
 			</li>
 			<li>
-				<label for="category"><span class="">카테고리(필수)</span></label>
-				<input type="text" class="" name="category" id="category" placeholder="카테고리" required>
+				<label for="category"><span class="span_text">카테고리(필수)</span></label>
+				<input type="text" class="input_item" name="category" id="category" placeholder="카테고리" required>
 			</li>
 			<li>
-				<label for="p_name"><span class="">상품이름(필수)</span></label>
-				<input type="text" class="" name="p_name" id="p_name" value="" placeholder="상품이름을 입력해 주세요">
+				<label for="p_name"><span class="span_text">상품이름(필수)</span></label>
+				<input type="text" class="input_item" name="p_name" id="p_name" value="" placeholder="상품이름을 입력해 주세요">
 			</li>
 			<li>
-				<label for="price"><span class="">가격(필수)</span></label>
-				<input type="number" class="" name="price" id="price" value="" placeholder="가격을 입력해 주세요">
+				<label for="price"><span class="span_text">가격(필수)</span></label>
+				<input type="number" class="input_item" name="price" id="price" value="" placeholder="가격을 입력해 주세요">
 			</li>
 			<li class="flex-box">
 				<button type="submit" class="btn btn_chocolate"  name="btn_add" id="btn_add">등록</button>

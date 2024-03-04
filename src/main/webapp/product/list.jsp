@@ -35,7 +35,7 @@
 			<button type="submit" id="search" class="btn btn_chocolate">조회</button>
 			<button id="searchAll" type="button" class="btn btn_chocolate" onclick="location.href='${pageContext.request.contextPath}/product/list'">전체보기</button>
 
-			<button type="button" class="btn btn_skyblue" id="add">등록</button>
+			<button type="button" class="btn btn_skyblue" id="btn_add">등록</button>
 		</form>
 	</div>
 
@@ -58,6 +58,11 @@
 		// js 파일에서는 서버 애트리뷰트를 가져올 수 없습니다
 		// 서버 애트리뷰는 jsp 파일 안에 있는 script 태그안에서 사용 할 수 있습니다
 		const temp = '${cate}'
+		
+		document.getElementById('btn_add').addEventListener('click', ()=>{
+			location.href = 'add'
+			
+		})
 	</script>
 
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/product_sch.js"></script>

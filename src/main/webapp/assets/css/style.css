@@ -14,9 +14,13 @@ a{ text-decoration: none; }
 
 
 h2 {color: purple;}
-.profile > img {width : 30px;height: 30px;border-radius: 40%;object-fit:cover;}
+.profile > img { width : 30px;height: 30px;border-radius: 40%;object-fit:cover; }
 
-select,input {padding: 0.5rem  0.02rem;width : 12rem;}
+select,input { padding: 0.5rem  0.02rem;width:12rem; }
+
+.input_item { border: 1px solid #ccc;padding: 10px; }
+
+.span_text { font-weight: 600; } 
 
 /* layout */
 .container_wrap { height: calc(100vh - 48px); padding:0; }

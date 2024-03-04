@@ -15,32 +15,34 @@
 	<%@ include file="/header.jsp" %>
 	<h2>회원 가입</h2>
 	<hr>
-	<form method="POST">
-		<ul id="m-ul" class="mt-4">
-			<li>
-				<span class="title_text">아이디(필수)</span>
-				<input type="text" class="input_item" name="custom_id" id="custom_id" placeholder="아이디를 입력해 주세요" required>
-				<%--<button type="button" class="btn btn_gray" name="btn_check_id" id="btn_check_id">중복확인</button>--%>
-			</li>
-			<li>
-				<span class="title_text">이름(필수)</span>
-				<input type="text" class="" name="name" id="name" placeholder="이름" required>
-			</li>
-			<li>
-				<span class="title_text">이메일</span>
-				<input type="email" class="" name="email" id="email" value="" placeholder="이메일을 입력해 주세요">
-			</li>
-			<li>
-				<span class="title_text">나이</span>
-				<input type="number" class="" name="age" id="age" value="" placeholder="나이을 입력해 주세요">
-			</li>
-			<li class="flex-box">
-				<button type="submit" class="btn btn_chocolate"  name="btn_add" id="btn_add">회원가입</button>
-			</li>
-		</ul>
-
-	</form>
-
+	
+	<div class="content">
+		<form method="POST">
+			<ul id="m-ul" class="mt-4">
+				<li>
+					<span class="span_text">아이디(필수)</span>
+					<input type="text" class="input_item" name="custom_id" id="custom_id" placeholder="아이디를 입력해 주세요" required>
+					<%--<button type="button" class="btn btn_gray" name="btn_check_id" id="btn_check_id">중복확인</button>--%>
+				</li>
+				<li>
+					<span class="span_text">이름(필수)</span>
+					<input type="text" class="input_item" name="name" id="name" placeholder="이름" required>
+				</li>
+				<li>
+					<span class="span_text">이메일</span>
+					<input type="email" class="input_item" name="email" id="email" value="" placeholder="이메일을 입력해 주세요">
+				</li>
+				<li>
+					<span class="span_text">나이</span>
+					<input type="number" class="input_item" name="age" id="age" value="" placeholder="나이을 입력해 주세요">
+				</li>
+				<li class="flex-box">
+					<button type="submit" class="btn btn_chocolate"  name="btn_add" id="btn_add">회원가입</button>
+				</li>
+			</ul>
+	
+		</form>
+	</div>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/member_add.js"></script>
 
 </body>
