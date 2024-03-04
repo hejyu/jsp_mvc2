@@ -4,16 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title></title>
-</head>
-<style type="text/css">
-	ul{ list-style:none; padding: 20px; display: flex;
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		ul{ list-style:none; padding: 20px; display: flex;
 			border-bottom: 3px solid gray;
 		}
-	li{ padding: 20px; }
-	a{ text-decoration: none; }
-</style>
+		li{ padding: 20px; }
+		a{ text-decoration: none; }
+	</style>
+</head>
+
 <body>
 	<ul>
 		<!-- contextPath를 포함시키는 절대경로로 합니다. : 
@@ -31,8 +32,7 @@
 		<li class="profile"><img alt="profile" src="${pageContext.request.contextPath}/assets/images/capybara.png"></li>
 					
 	</ul>
-	
-	
+
 
 </body>
 </html>
