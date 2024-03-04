@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -38,8 +39,17 @@ public class MemberJoinController  implements Controller {
 			int age = Integer.parseInt(request.getParameter("age"));
 			int count = dao.insert(new CustomerDto(custom_id,name,email,age,null));
 
+			String message = "회원 등록이 완료되었습니다.";
+			if(count == 0 ) 
+				message = "회원 등록에 오류가 생겼습니다.";
+			
 			// POST 요청 처리 후에는 회원 목록 url 로 리다이렉트 합니다.
-			response.sendRedirect("list");
+			response.setContentType("text/html; charset=UTF-8");
+			PrintWriter out = response.getWriter();
+			out.print("<script type='text/javascript'>");
+			out.print("alert('"+message+"');");
+			out.print("location.href='list';");
+			out.print("</script>");
 
 			logger.info("[회원 등록] 반영 개수 : {} 건 ", count);
 		}
